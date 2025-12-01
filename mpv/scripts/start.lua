@@ -1,0 +1,5 @@
+mp.register_event("file-loaded", function()
+    mp.add_timeout(0.3, function()
+        mp.set_property_native("pause", false)
+    end)
+end)
